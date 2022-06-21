@@ -1,0 +1,73 @@
+.containerCb{
+    /*Caixa que guarda o logo, texto façã seu login e o icone de seta */
+
+    .containerCb_logo{
+        /*Caixa que guarda a logo  */
+
+        width: 89%;
+        margin: auto auto;
+        background: red;
+        margin-top: 40px;
+
+
+        img{
+
+            width: 115px;
+            height: 28px;
+        }
+    }
+
+
+
+    .containerCb_textLogin{
+        /*Caixa que guarda o icone de seta, texto facao seu login e o texto info de cadastro*/
+
+        margin-top: 30px;
+        width: 100%;
+       
+        background: blue;
+        position: absolute;
+        display: inline;
+        height:59px ;
+
+
+
+        img{
+
+            position: relative;
+            left: 20px;
+            height: 24px;
+            width: 24px;
+        }
+
+
+        h1{
+
+            color: #d4ccb6;
+            position: relative;
+
+            /* Foi usado movelo para frente do icone*/
+            transform: translateY(-46px);
+            left: 55px;
+            font-weight: 600px;
+            font-size: 24px;
+        }
+
+
+        p{
+
+            position: relative;
+
+            color: #afb6c2;
+            font-size: 16px;
+            font-weight: 500px;
+            line-height:24px;
+            left: 20px;
+
+            transform: translateY(-55px);
+        } 
+    }
+
+
+
+}
