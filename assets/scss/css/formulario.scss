@@ -4,9 +4,8 @@
     .containerCb_logo{
         /*Caixa que guarda a logo  */
 
-        width: 89%;
+        width: 90%;
         margin: auto auto;
-        background: red;
         margin-top: 40px;
 
 
@@ -19,25 +18,22 @@
 
 
 
+
     .containerCb_textLogin{
         /*Caixa que guarda o icone de seta, texto facao seu login e o texto info de cadastro*/
 
+        width: 89.5%;
+        margin: auto auto;
+        height:49px ;
         margin-top: 30px;
-        width: 100%;
-       
-        background: blue;
-        position: absolute;
-        display: inline;
-        height:59px ;
-
-
+        
 
         img{
 
             position: relative;
-            left: 20px;
             height: 24px;
             width: 24px;
+            top: 6px;
         }
 
 
@@ -47,8 +43,8 @@
             position: relative;
 
             /* Foi usado movelo para frente do icone*/
-            transform: translateY(-46px);
-            left: 55px;
+            transform: translateY(-30px);
+            left: 35px;
             font-weight: 600px;
             font-size: 24px;
         }
@@ -62,12 +58,206 @@
             font-size: 16px;
             font-weight: 500px;
             line-height:24px;
-            left: 20px;
+          
 
-            transform: translateY(-55px);
+            transform: translateY(-35px);
         } 
+    }
+}
+
+
+
+
+.containerMn{
+
+    /*Caixa que guarda os 2 inputs, icones e os textos */
+    .containerMn_formulario{
+
+        
+        width: 90%;
+        margin: auto auto;
+
+
+        /****************************/
+        /*Eles estao no escopo do containerMn_formulario e nao dentro da div
+        colocados assim para nao estarem na div do input */
+
+        /* Legenda do email*/
+        #legendaEmail{
+            color: white;
+            margin: auto auto;
+            margin-top: 30px;
+            padding: 5px;
+           
+        }
+
+
+        /* Legenda da senha  */
+        #legendaSenha{
+            color: white;
+            margin-top: 25px;
+            padding: 5px;
+        }
+        /****************************/
+
+
+        .containerMn_formulario_email{
+            /*Caixa que guarda o input email e o icone*/
+
+            border: 1px solid #4f4f4e;
+            border-radius: 4px;
+            margin:auto auto;
+            width: 100%;
+            height: 44px;
+            display:flex;
+        
+
+            i #iconeEmail{
+
+                width: 20px;
+                height: 20px;
+                margin-top: 13px;
+                margin-left: 10px; 
+            }
+
+
+            #inputEmail{
+
+                border: none;
+                outline: none;
+                background:#191816;
+                color: white;
+                width: 100%;
+                margin-left: 10px;
+
+            }
+        }
+
+
+        .containerMn_formulario_senha{
+            /*Caixa que guarda o input senha e o icone cadeado e o  */
+
+            border: 1px solid #4f4f4e;
+            border-radius: 4px;
+            margin:auto auto;
+            width: 100%;
+            height: 44px;
+            display:flex;
+
+
+            i {
+                /* Aqui possui as 2 icones de cadeado e o olho*/
+                
+                #iconeCadeado{
+
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px; 
+                    margin-top: 12px;
+                }
+
+
+                #iconeOlho{
+
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 12px;
+                    margin-top: 12px;
+                }
+
+
+                #iconeOlhoFechado{
+
+                    width: 20px;
+                    height: 20px;
+                    display: none;
+                }
+            }
+
+
+            #inputSenha{
+
+                border: none;
+                outline: none;
+                background:#191816;
+                color: white;
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+
+
+
+        .containerMn_formulario_checkbox{
+            /*Caixa que guarda o chekbox de ser lembrado e o texto "Esqueci" */
+
+            width: 100%;
+            height: 30px;
+            margin: auto auto;
+            margin-top: 20px;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-between;
+
+
+            label{
+
+                color: #757575;
+            }
+            
+
+            a{
+
+                text-decoration: none;
+                font-weight: 600;
+                color:#ffc632 ;
+                font-size: 14px;
+            }
+        }
+
+
+        button{
+
+            width: 100%;
+            height: 51px;
+            background: #ffc632;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.5%;
+        }
+
+        .containerMn_formulario_registrar{
+
+            margin-top:14px ;
+            text-align: center;
+
+
+            h4{
+
+                color: #cba441;
+                font-size: 14px;
+                
+
+                a{
+
+                    color: #ffc632;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+
+
+
     }
 
 
+    
 
 }

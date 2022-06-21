@@ -15,17 +15,25 @@
     <link rel="stylesheet" type="text/css" href="assets/scss/css/stylopagina.css">
     <link rel="stylesheet" type="text/css" href="assets/scss/css/formulario.css">
 
+    <!--Fonte utilizada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     <header class="containerCb">
         <!-- Logo-->
         <div class="containerCb_logo">
+
             <img src="assets/img/log_camp.svg" alt="logo camp in" id="logoCamp">
+
         </div>
         
         <!-- texo faça seu login-->
         <div class="containerCb_textLogin">
+
             <img src="assets/img/icone_de_login.svg" alt="faça seu login">
             <h1 id="textoFacaseuLogin" >Faça seu login </h1>
             <p id="textInfo" >Entre com suas informações de cadastro.</p>
@@ -34,7 +42,42 @@
     </header>
 
     <main class="containerMn">
-        <form action="#" method="post" class="containerMn_formulario" >
+        <form action="#" method="post" class="containerMn_formulario" onsubmit="validacaoCampo(event)">
+
+            <legend id="legendaEmail" for="inputEmail">E-mail</legend>
+            <div class="containerMn_formulario_email" >
+
+                <i  aria-hidden="true" > <img id="iconeEmail" src="assets/img/icone_email.svg" alt="icone email"> </i>
+                <input type="email" id="inputEmail" name="inputEmail" placeholder="Digite seu e-mail" required  minlength="5" maxlength="40" >
+
+            </div>
+
+            <legend id="legendaSenha" for="inputSenha">Senha</legend>
+            <div class="containerMn_formulario_senha" >
+
+                <i  aria-hidden="true" > <img id="iconeCadeado" src="assets/img/icone_cadeado.svg" alt="icone cadeado"> </i>
+                <input type="password" id="inputSenha" name="inputSenha" placeholder="Digite sua senha" required  minlength="8" maxlength="20" >
+                <i aria-hidden="true" > <img onclick="revelarSenha(event)" id="iconeOlho"  src="assets/img/icone_olho.svg" alt="icone olho aberto"> </i>
+                <i aria-hidden="true" > <img onclick="bLoquarSenha(event)" id="iconeOlhoFechado"  src="assets/img/icone_olho_fechado.png" alt="icone olho fechado"> </i>
+                
+            </div>
+
+            <div class="containerMn_formulario_checkbox" >
+                
+                <div> 
+                    <input type="checkbox" id="lembrarCheckbox">
+                    <label for="lembrarCheckboss">Lembre-me</label>
+                </div>
+
+                <a href="#" id="textEsqueci"> <span> Esqueci minha senha </span> </a>
+            </div>
+
+           <button id="botaoEnviar" > Entrar</button>
+            
+           <div class="containerMn_formulario_registrar">
+                <h4>Não tem uma conta? <a href="#">Registre-se</a> </h4>
+
+            </div>
 
 
         </form>
