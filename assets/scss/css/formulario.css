@@ -75,6 +75,8 @@
   width: 99%;
   height: 44px;
   display: flex;
+  /*Aqui fica animacoes, transicoes .... com campo email */
+  /*Hover do campo input email*/
 }
 .containerMn .containerMn_formulario .containerMn_formulario_email i #iconeEmail {
   width: 20px;
@@ -90,6 +92,10 @@
   width: 100%;
   margin-left: 10px;
 }
+.containerMn .containerMn_formulario .containerMn_formulario_email:hover {
+  border: 3px solid #ffd25d;
+  transition: 0.2s linear;
+}
 .containerMn .containerMn_formulario .containerMn_formulario_senha {
   /*Caixa que guarda o input senha e o icone cadeado e o  */
   border: 1px solid #4f4f4e;
@@ -98,6 +104,7 @@
   width: 99%;
   height: 44px;
   display: flex;
+  /*Aqui fica animacoes, transicoes... no campo senha */
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha i {
   /* Aqui possui os 3 icones de cadeado e o olho e a versao do olho fechado */
@@ -127,8 +134,12 @@
   width: 100%;
   margin-left: 15px;
 }
+.containerMn .containerMn_formulario .containerMn_formulario_senha:hover {
+  border: 2px solid #ffd25d;
+  transition: 0.2s linear;
+}
 .containerMn .containerMn_formulario .containerMn_formulario_checkbox {
-  /*Caixa que guarda o chekbox de ser lembrado e o texto "Esqueci" */
+  /*Caixa que guarda o chekbox de ser lembrado e o texto"Esqueci minha senha" e o butao */
   width: 100%;
   height: 30px;
   margin: auto auto;
@@ -139,12 +150,21 @@
 }
 .containerMn .containerMn_formulario .containerMn_formulario_checkbox label {
   color: #757575;
+  /*Hover do lembre-me*/
+}
+.containerMn .containerMn_formulario .containerMn_formulario_checkbox label:hover {
+  color: #f0e5e5;
+  transition: 0.5s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_checkbox a {
   text-decoration: none;
   font-weight: 600;
   color: #ffc632;
   font-size: 14px;
+  /*Hover do link do texto "Esqueci minha senha"*/
+}
+.containerMn .containerMn_formulario .containerMn_formulario_checkbox a:hover {
+  color: #f4ca5d;
 }
 .containerMn .containerMn_formulario button {
   width: 100%;
@@ -156,8 +176,14 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1.5%;
+  /* hover do botao*/
+}
+.containerMn .containerMn_formulario button:hover {
+  box-shadow: 0px 3px 0px white, 0px 7px 5px #f7d57f;
+  transition: 0.5s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_registrar {
+  /*Aqui fica o link de se registrar*/
   margin-top: 14px;
   text-align: center;
 }
@@ -169,4 +195,8 @@
   color: #ffc632;
   text-decoration: none;
   font-size: 14px;
+  /*Hover do link "Registre-se"*/
+}
+.containerMn .containerMn_formulario .containerMn_formulario_registrar h4 a:hover {
+  color: #fcfcfc;
 }/*# sourceMappingURL=formulario.css.map */

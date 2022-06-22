@@ -131,6 +131,15 @@
                 margin-left: 10px;
 
             }
+
+
+            /*Aqui fica animacoes, transicoes .... com campo email */
+            
+            /*Hover do campo input email*/
+            &:hover{
+                border: 3px solid #ffd25d;
+                transition: 0.2s linear  ; 
+            }
         }
 
 
@@ -175,6 +184,7 @@
             }
 
 
+
             #inputSenha{
 
                 border: none;
@@ -184,12 +194,19 @@
                 width: 100%;
                 margin-left: 15px;
             }
+
+            /*Aqui fica animacoes, transicoes... no campo senha */
+
+            &:hover{
+                border: 2px solid #ffd25d;
+                transition: 0.2s linear;
+            }
         }
 
 
 
         .containerMn_formulario_checkbox{
-            /*Caixa que guarda o chekbox de ser lembrado e o texto "Esqueci" */
+            /*Caixa que guarda o chekbox de ser lembrado e o texto"Esqueci minha senha" e o butao */
 
             width: 100%;
             height: 30px;
@@ -204,6 +221,12 @@
             label{
 
                 color: #757575;
+
+                /*Hover do lembre-me*/
+                &:hover{
+                  color: #f0e5e5;  
+                  transition: 0.5s  linear;
+                }
             }
             
 
@@ -213,8 +236,14 @@
                 font-weight: 600;
                 color:#ffc632 ;
                 font-size: 14px;
+
+                /*Hover do link do texto "Esqueci minha senha"*/
+                &:hover{
+                    color: #f4ca5d;
+                }
             }
         }
+
 
 
         button{
@@ -228,9 +257,20 @@
             font-size: 18px;
             font-weight: 600;
             letter-spacing: 1.5%;
+
+            /* hover do botao*/
+
+            &:hover{
+                box-shadow: 0px 3px 0px  white,
+                0px 7px 5px #f7d57f;
+                transition: 0.5s linear ;
+            }
         }
 
+
+
         .containerMn_formulario_registrar{
+            /*Aqui fica o link de se registrar*/
 
             margin-top:14px ;
             text-align: center;
@@ -247,17 +287,24 @@
                     color: #ffc632;
                     text-decoration: none;
                     font-size: 14px;
+
+                    /*Hover do link "Registre-se"*/
+                    &:hover{
+                        color:#fcfcfc ;
+                    }
                 }
             }
         }
-
-
-
-
-
     }
-
-
-    
-
 }
+
+
+
+
+
+
+
+
+
+
+
