@@ -72,7 +72,7 @@
   border: 1px solid #4f4f4e;
   border-radius: 4px;
   margin: auto auto;
-  width: 100%;
+  width: 99%;
   height: 44px;
   display: flex;
 }
@@ -95,12 +95,12 @@
   border: 1px solid #4f4f4e;
   border-radius: 4px;
   margin: auto auto;
-  width: 100%;
+  width: 99%;
   height: 44px;
   display: flex;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha i {
-  /* Aqui possui as 2 icones de cadeado e o olho*/
+  /* Aqui possui os 3 icones de cadeado e o olho e a versao do olho fechado */
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha i #iconeCadeado {
   width: 20px;
@@ -125,7 +125,7 @@
   background: #191816;
   color: white;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_checkbox {
   /*Caixa que guarda o chekbox de ser lembrado e o texto "Esqueci" */
