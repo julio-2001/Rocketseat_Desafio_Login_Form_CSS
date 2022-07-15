@@ -14,6 +14,8 @@
     <!--- Stylo da pagina  -->
     <link rel="stylesheet" type="text/css" href="assets/scss/css/stylopagina.css">
     <link rel="stylesheet" type="text/css" href="assets/scss/css/formulario.css">
+    <link rel="stylesheet" type="text/css"  href="assets/scss/css/modal.css">
+
 
     <!--Fonte utilizada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,13 +44,13 @@
     </header>
 
     <main class="containerMn">
-        <form action="#" method="post" class="containerMn_formulario" onsubmit="validacaoCampo(event)">
+        <form  method="post" class="containerMn_formulario" >
 
             <legend id="legendaEmail" for="inputEmail">E-mail</legend>
             <div class="containerMn_formulario_email" >
 
                 <i  aria-hidden="true" > <img id="iconeEmail" src="assets/img/icone_email.svg" alt="icone email"> </i>
-                <input type="email" id="inputEmail" name="inputEmail" placeholder="Digite seu e-mail" required  minlength="5" maxlength="40" autocomplete="on">
+                <input type="email" id="inputEmail" name="inputEmail" placeholder="Digite seu e-mail" required  minlength="5" maxlength="40" autocomplete="on" >
 
             </div>
 
@@ -56,7 +58,7 @@
             <div class="containerMn_formulario_senha" >
 
                 <i  aria-hidden="true" > <img id="iconeCadeado" src="assets/img/icone_cadeado.svg" alt="icone cadeado"> </i>
-                <input type="password" id="inputSenha" name="inputSenha" placeholder="Digite sua senha" required  minlength="8" maxlength="20" autocomplete="current-password">
+                <input type="password" id="inputSenha" name="inputSenha" placeholder="Digite sua senha" required  minlength="8" maxlength="20" autocomplete="current-password" >
                 <i aria-hidden="true" > <img onclick="revelarSenha(event)" id="iconeOlho"  src="assets/img/icone_olho.svg" alt="icone olho aberto"> </i>
                 
                 
@@ -75,17 +77,45 @@
            <button id="botaoEnviar" > Entrar</button>
             
            <div class="containerMn_formulario_registrar">
-                <h4>Não tem uma conta? <a href="#">Registre-se</a> </h4>
-
+                <h4>Não tem uma conta? <a onclick="AbrirModal(event)" href="#">Registre-se</a> </h4>
             </div>
 
 
         </form>
     </main> 
 
+    <!--- Modal-->
+    <div id="modal" class="containerMl">
+        <div class="containerMl_modal">
+            <h3 class="containerML_modal_title">Registre-se na camp.in</h3>
+            <form class="containerMl_modal_form" method="post" onsubmit="dados(event)">
+                <img onclick="newUserfechar(event)" id="newUserIconX" src="assets/img/icone_X.svg"/>
+
+                <label for="newUserInputEmail">E-mail</label>
+                <input id="newUserInputEmail" name="newUserInputEmail"   type="email" placeholder="Seu  melhor  E-mail" minlength="5" maxlength="50" autocomplete="username" required/>
+
+
+                <label for="newUserInputPassworld">Senha:</label>
+                <div class="containerMl_modal_form_inputArea">
+                    <input id="newUserInputPassoworld" name="newUserInputPassoworld"   type="password" placeholder="Digite uma senha forte" minlength="8" maxlength="20" autocomplete="new-password" required/> 
+                    <img  id="newUserIconeEye" onclick="newUserRevelarSenha(event)" src="assets/img/icone_olho.svg"/>
+                </div>
+
+                <button id="newUserButton"> 
+                    Registrar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
 
     <!-- Validacao do formulario -->
     <script  type="text/javascript" src="assets/src/js/formulario.js"></script>
+    <script  type="text/javascript" src="assets/src/ts/localstorage/newUser.js"></script>
+    <script src="assets/src/ts/modal/modal.js"></script>
 
 </body>
 </html>

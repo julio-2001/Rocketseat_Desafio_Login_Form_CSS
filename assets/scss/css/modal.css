@@ -1,0 +1,169 @@
+.containerMl {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 100000000000000030000000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
+  -webkit-animation: modalL 1s linear;
+          animation: modalL 1s linear;
+}
+@-webkit-keyframes modalL {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -640px, 0);
+  }
+}
+@keyframes modalL {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -640px, 0);
+  }
+}
+.containerMl h3 {
+  color: #ffda00;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+.containerMl .containerMl_modal_form {
+  border: 5px solid #ffda00;
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+.containerMl .containerMl_modal_form #newUserIconX {
+  width: 15px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  left: 90%;
+  right: 0;
+  background: #ffda00;
+  border-radius: 50px;
+  padding: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.containerMl .containerMl_modal_form label {
+  color: white;
+  font-weight: 900;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.6s linear;
+  line-height: 20px;
+  outline: none;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail::-moz-placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail:-ms-input-placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail::placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail:hover {
+  border: 2px solid #ffda00;
+}
+.containerMl .containerMl_modal_form #newUserInputEmail:valid {
+  border: 3px solid rgb(21, 181, 21);
+}
+.containerMl .containerMl_modal_form #newUserInputEmail:focus:invalid {
+  border: 3px solid rgb(176, 11, 11);
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea {
+  width: 100%;
+  display: flex;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld {
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.6s linear;
+  border: none;
+  line-height: 20px;
+  outline: none;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld::-moz-placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld:-ms-input-placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld::placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld:hover {
+  border: 2px solid #ffda00;
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld:valid {
+  border: 3px solid rgb(21, 181, 21);
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserInputPassoworld:focus:invalid {
+  border: 3px solid rgb(176, 11, 11);
+}
+.containerMl .containerMl_modal_form .containerMl_modal_form_inputArea #newUserIconeEye {
+  background: white;
+  border-left: none;
+  cursor: pointer;
+}
+.containerMl .containerMl_modal_form button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  background: #ffda00;
+  border: none;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.containerMl .containerMl_modal_form button:hover {
+  background: rgba(255, 217, 0, 0.9176470588);
+}
+
+.containerMl.active {
+  visibility: visible;
+  -webkit-animation: modal 1s linear;
+          animation: modal 1s linear;
+}
+@-webkit-keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -640px, 0);
+  }
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -640px, 0);
+  }
+}/*# sourceMappingURL=modal.css.map */

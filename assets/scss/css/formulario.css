@@ -91,10 +91,22 @@
   color: white;
   width: 100%;
   margin-left: 10px;
+  transition: 0.2s linear;
+}
+.containerMn .containerMn_formulario .containerMn_formulario_email #inputEmail::-moz-placeholder {
+  margin-left: 10px;
+  padding: 5px;
+}
+.containerMn .containerMn_formulario .containerMn_formulario_email #inputEmail:-ms-input-placeholder {
+  margin-left: 10px;
+  padding: 5px;
+}
+.containerMn .containerMn_formulario .containerMn_formulario_email #inputEmail::placeholder {
+  margin-left: 10px;
+  padding: 5px;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_email:hover {
   border: 3px solid #ffd25d;
-  transition: 0.2s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha {
   /*Caixa que guarda o input senha e o icone cadeado e o  */
@@ -120,11 +132,8 @@
   height: 20px;
   margin-right: 12px;
   margin-top: 12px;
-  /* Hover*/
-}
-.containerMn .containerMn_formulario .containerMn_formulario_senha i #iconeOlho:hover {
-  box-shadow: 0px -4px 5px #ffd25d, 4px 0px 5px #ffd25d;
   transition: 0.5s cubic-bezier(0, 0.27, 0.46, 2.26);
+  background: transparent;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha #inputSenha {
   border: none;
@@ -133,10 +142,10 @@
   color: white;
   width: 100%;
   margin-left: 15px;
+  transition: 0.2s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_senha:hover {
   border: 2px solid #ffd25d;
-  transition: 0.2s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_checkbox {
   /*Caixa que guarda o chekbox de ser lembrado e o texto"Esqueci minha senha" e o butao */
@@ -176,11 +185,11 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1.5%;
+  transition: 0.5s linear;
   /* hover do botao*/
 }
 .containerMn .containerMn_formulario button:hover {
   box-shadow: 0px 3px 0px white, 0px 7px 5px #f7d57f;
-  transition: 0.5s linear;
 }
 .containerMn .containerMn_formulario .containerMn_formulario_registrar {
   /*Aqui fica o link de se registrar*/

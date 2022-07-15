@@ -73,7 +73,6 @@
     /*Caixa que guarda os 2 inputs, icones e os textos */
     .containerMn_formulario{
 
-        
         width: 90%;
         margin: auto auto;
 
@@ -84,6 +83,7 @@
 
         /* Legenda do email*/
         #legendaEmail{
+
             color: white;
             margin: auto auto;
             margin-top: 30px;
@@ -94,6 +94,7 @@
 
         /* Legenda da senha  */
         #legendaSenha{
+
             color: white;
             margin-top: 25px;
             padding: 5px;
@@ -129,6 +130,12 @@
                 color: white;
                 width: 100%;
                 margin-left: 10px;
+                transition: 0.2s linear;
+                
+                &::placeholder{
+                    margin-left: 10px;
+                    padding:  5px;
+                }
 
             }
 
@@ -138,7 +145,6 @@
             /*Hover do campo input email*/
             &:hover{
                 border: 3px solid #ffd25d;
-                transition: 0.2s linear  ; 
             }
         }
 
@@ -172,21 +178,9 @@
                     height: 20px;
                     margin-right: 12px;
                     margin-top: 12px;
-
-                    /* Hover*/
-                    &:hover{
-                        box-shadow: 0px -4px 5px #ffd25d,
-                        4px 0px 5px #ffd25d;
-                        transition: 0.5s cubic-bezier(0, 0.27, 0.46, 2.26);
-                    }
-
-                 
-
-
+                    transition: 0.5s cubic-bezier(0, 0.27, 0.46, 2.26);
+                    background: transparent;
                 }
-
-
-               
             }
 
 
@@ -199,13 +193,13 @@
                 color: white;
                 width: 100%;
                 margin-left: 15px;
+                transition: 0.2s linear;
             }
 
             /*Aqui fica animacoes, transicoes... no campo senha */
 
             &:hover{
                 border: 2px solid #ffd25d;
-                transition: 0.2s linear;
             }
         }
 
@@ -263,13 +257,13 @@
             font-size: 18px;
             font-weight: 600;
             letter-spacing: 1.5%;
+            transition: 0.5s linear ;
 
             /* hover do botao*/
 
             &:hover{
                 box-shadow: 0px 3px 0px  white,
                 0px 7px 5px #f7d57f;
-                transition: 0.5s linear ;
             }
         }
 
@@ -296,6 +290,7 @@
 
                     /*Hover do link "Registre-se"*/
                     &:hover{
+
                         color:#fcfcfc ;
                     }
                 }

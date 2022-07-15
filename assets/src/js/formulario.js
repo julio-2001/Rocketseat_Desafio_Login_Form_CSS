@@ -24,8 +24,3 @@ function revelarSenha(){
 }
 
 
-function validacaoCampo(dados){
-
-    dados.preventDefault()
-
-}
