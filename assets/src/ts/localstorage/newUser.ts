@@ -1,11 +1,9 @@
 function dados(info){
+    
 
     info.preventDefault()
-
-    
     const personEmailForm =  info.target.elements.item(0).value
     const personPassworldForm = info.target.elements.item(1).value
-
 
     class newUser{
         
@@ -23,15 +21,19 @@ function dados(info){
         }
     }
 
-    var createStorage = new newUser(
+    //TODO caso falhe
+    var createStorage:object = new newUser(
         personEmailForm,
-        personPassworldForm
+        personPassworldForm,
     )
     
     if(localStorage.getItem("person") === null){
-        
-        localStorage.setItem("person", JSON.stringify(createStorage))
+
+        const stringify = JSON.stringify(createStorage)
+        localStorage.setItem("person", stringify)
     }
+
+
 }
 
 

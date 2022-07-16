@@ -9,8 +9,10 @@ function dados(info) {
         }
         return newUser;
     }());
+    //TODO caso falhe
     var createStorage = new newUser(personEmailForm, personPassworldForm);
     if (localStorage.getItem("person") === null) {
-        localStorage.setItem("person", JSON.stringify(createStorage));
+        var stringify = JSON.stringify(createStorage);
+        localStorage.setItem("person", stringify);
     }
 }
